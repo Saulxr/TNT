@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRUD App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    
+    <main>
+        <section class="task-form">
+            <h2>Add Task</h2>
+            <form id="task-form">
+                <div>
+                    <label for="task-name">Task Name:</label>
+                    <input type="text" id="task-name" required>
+                </div>
+                <div>
+                    <label for="assigned-to">Assigned To:</label>
+                    <input type="text" id="assigned-to" required>
+                </div>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
